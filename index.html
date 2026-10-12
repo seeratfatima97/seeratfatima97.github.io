@@ -1,21 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <style>
-        body { font-family: Arial; max-width: 700px; margin: 40px auto; }
-        h1   { color: #1F3864; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <title> Portfolio</title>
 </head>
 <body>
-    <h1>Seerat Fatima</h1>
-    <p>BS Software Engineering student | Cloud Computing learner</p>
-    <h2>My Skills</h2>
-    <ul>
-        <li>Linux and Git</li>
-        <li>Python</li>
-        <li>Cloud Computing basics</li>
-    </ul>
-    <p>Email: seerat@example.com</p>
+            <div id="header"> 
+                <div class="container">
+                    <nav>
+                        <img src="logo.png" class="logo">
+                        <ul id="sidemenu">
+                                <li> <a href="#header"> Home  </a> </li>
+                                <li> <a href="#about"> About </a> </li>
+                                <li> <a href="#services"> Services </a> </li>
+                                <li> <a href="#portfolio"> Portfolio </a> </li>
+                                <li> <a href="#contact"> Contact </a> </li>
+                                <i class="fas fa-times" onclick="closemenu()"></i>
+                        </ul>            
+                                <i class="fas fa-bars" onclick="openmenu()"></i>
+                    </nav>                
+                    <div class="header-text">
+                        <p> UIUX Designer! </p>
+                        <h1> Hi, I'm <span> Seerat </span> <br>  Fatima from Pakistan. </h1>                       
+                     </div> </div> </div>    
+           <div id="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="about-col-1">
+                                <img src="User2.png">
+                             </div> 
+                                <div class="about-col-2">
+                                <h1 class="sub-title"> About Me </h1>
+                                <p> I am a Software Engineering student at Fatima Jinnah Women University, Rawalpindi, with an interest in web development, programming, and emerging technologies. I enjoy learning new skills, solving problems, and applying my knowledge through practical projects. With a background in social media management and a growing technical skill set, I aim to combine creativity with technology to build useful digital solutions. I am continuously working to strengthen my programming fundamentals, expand my expertise, and grow into a skilled and confident software professional.</p>           
+                                <div class="tab-title">
+                                <P class="tab-links active-links" onclick="opentab('skills')"> Skills </P>
+                                <P class="tab-links" onclick="opentab('experience')"> Experience </P>
+                                <P class="tab-links" onclick="opentab('education')"> Education </P>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span> UI/UX </span><br>Designer Web/App interfaces</li>
+                                    <li><span> Web Development </span><br>Designer Web/App interfaces</li>
+                                    <li><span> App Development </span><br>Building Andriod/iOS apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span> Oct 2025-May 2025 </span><br> Job at xavinex as Social Media Manager and HR</li>
+                                    <li><span> Aug 2025-Sep 2025 </span><br> Internship at Certura as C++ Programmer</li>
+                                    <li><span> July 2025-Oct 2025 </span><br>Internship at xavinex as social media manager. </li>
+                                </ul>
+                            </div>
+                             <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span> 2020-2022 </span><br> Matric From Unique Education System Kallar Kahar.</li>
+                                    <li><span> 2022-2024 </span><br>Intermediate From Fauji Foundation College Kallar Kahar.</li>
+                                    <li><span> 2024-2028 </span><br> BS Software Engineering From FJWU. </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <div id="services">
+<div class="container">
+<h1 class="sub-title"> Services </h1>
+<div class="services-List">
+<div> 
+        <h2> Web Design </h2>
+        <p> I create clean, modern, and visually appealing website designs that reflect your brand identity, engage visitors, and deliver a professional online presence across devices. </p>   
+        <a href="#"> Learn more </a> 
+</div>
+<div> 
+        <h2> UIUX Design </h2>
+        <p> I design intuitive and user-friendly interfaces with clear layouts, thoughtful visual elements, and smooth navigation to make digital experiences simple, engaging, and accessible.
+ </p>   
+        <a href="#"> Learn more </a> 
+</div>
+<div> 
+        <h2> Web Page </h2>
+        <p> I build responsive web pages using HTML, CSS, and JavaScript, transforming ideas into functional layouts that look great, work smoothly, and adapt to different screen sizes. </p>   
+        <a href="#"> Learn more </a> 
+</div>
+</div>
+</div>
+    </div>        
+        <div id="portfolio">
+            <div class="container">
+                  <h1 class="sub-title"> My Work </h1>   
+                  <div class="work-list">
+                        <div class="work">
+                            <img src="work-1.png" alt="">
+                        <div class="layer"> 
+                            <h3> Social Media App </h3>
+                            <p> The app connects you to the talented people around the world. Download it from the playstore. </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                        </div>
+                        <div class="work">
+                            <img src="work-2.png" >
+                             <div class="layer"> 
+                            <h3> Music App </h3>
+                            <p> The app connects you to the talented people around the world. Download it from the playstore. </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                        </div>
+                        <div class="work">
+                            <img src="work-3.png" >
+                             <div class="layer"> 
+                            <h3> Online Shopping App </h3>
+                            <p> The app connects you to the talented people around the world. Download it from the playstore. </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                        </div>
+                  </div> 
+                  <a href="#" class="btn"> See more </a>
+            </div>
+        </div>
+        <div id="contact"> 
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                    <h1 class="sub-tittle"> Contact Me </h1>
+                    <p> <i class="fa-solid fa-envelope"></i> contact@example.com </p>
+                    <p> <i class="fa-solid fa-phone"></i> 0123456789 </p>
+                    <div class="social-icons"> 
+                        <a href=""> <i class="fa-brands fa-facebook"></i></a>    
+                        <a href=""> <i class="fa-brands fa-github"></i></a>    
+                        <a href=""> <i class="fa-brands fa-linkedin"></i></a>    
+                        <a href=""> <i class="fa-brands fa-instagram"> </i></a>    
+                    </div>
+                    <a href="Seerat_Fatima__ CV.pdf" download class="btn btn2"> Download CV </a> 
+                </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" aria-placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>  Copyright &copy; Seerat. Made by Seerat. </p>
+            </div>
+        </div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }   
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu()
+            {
+                sidemenu.style.right="0";
+            }
+            function closemenu()
+            {
+                sidemenu.style.right="-200px";
+            }
+    </script> 
 </body>
 </html>
